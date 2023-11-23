@@ -1,4 +1,4 @@
-package org.example;
+package org.example.web;
 
 
 import org.example.entities.Compte;
@@ -9,16 +9,13 @@ import org.example.repositories.CompteRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+
 
 import java.util.Date;
 import java.util.List;
 
 @SpringBootApplication
-@EntityScan(basePackages = "org.example.entities")
-@ComponentScan(basePackages = "org.example")
 public class Application {
 
 
