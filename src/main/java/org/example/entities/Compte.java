@@ -1,12 +1,12 @@
 package org.example.entities;
 
 import lombok.*;
-
 import jakarta.persistence.*;
+
 import java.util.Date;
 
-@Table@Getter@Setter@NoArgsConstructor@AllArgsConstructor
-@Entity@ToString
+@Getter@Setter@NoArgsConstructor@AllArgsConstructor@ToString
+@Entity@Table
 public class Compte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
