@@ -1,26 +1,24 @@
 package org.example.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.data.annotation.Id;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import jakarta.persistence.*;
 import java.util.Date;
 
-@Getter@Setter@NoArgsConstructor@AllArgsConstructor
-@Entity
+@Table@Getter@Setter@NoArgsConstructor@AllArgsConstructor
+@Entity@ToString
 public class Compte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private Long id;
-    // Getters
+    @Column
     private double solde;
+    @Column
     private Date dateCreation;
+    @Column
     private TypeCompte type;
+    @Column
     private EtatCompte etat;
 
 }
